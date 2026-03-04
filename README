@@ -1,0 +1,7 @@
+// To run the project, first the object has to be created: BST tree;
+//tree.insert() - used for inserting nodes in the BST
+//tree.print() - used to see the tree in order after inserting
+// tree.getMin() - used to obtain the minimum value
+// tree.getMax() - used ot obbtain the maximum value
+//tree.search() - used to find an integer
+//tree.remove() - used to delete nodes from the tree
