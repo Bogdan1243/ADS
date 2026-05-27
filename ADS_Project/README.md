@@ -9,8 +9,7 @@ adjust their performance slots, and search through the lineup — all while visu
 underlying data structures updating in real time.
 
 The project was developed as part of the ADS Course and implements four data structures
-from scratch: a Fibonacci Heap, a Red-Black Tree, a Disjoint Set (Union-Find), and the
-KMP String Matching algorithm.
+from scratch: a Fibonacci Heap, a Red-Black Tree, a Disjoint Set (Union-Find).
 
 
 Data Structures
@@ -66,17 +65,6 @@ Key operations:
 
 Artists are displayed as color-coded clusters grouped by their current stage representative.
 
-4. KMP String Matching
-The Knuth-Morris-Pratt algorithm is used to power the search functionality. When a user
-types a query, KMP runs against every artist name and genre string in the registry,
-returning the positions of all matches. Unlike naive substring search which runs in O(n*m),
-KMP constructs a failure function from the pattern in O(m) time and uses it to scan the
-text in O(n) time, making it significantly more efficient for repeated queries over a
-large roster.
-
-The search panel displays the failure function table alongside highlighted match positions
-in the results, making the inner workings of the algorithm visible.
-
 Application Features
 - Dashboard: Displays total artist count, distribution per stage, and the next
   artist scheduled to perform.
@@ -85,7 +73,6 @@ Application Features
   from the registry and stage cluster.
 - Promote Artist: Adjusts an artist's slot using decreaseKey() (for promotions)
   or remove() followed by insert() (for demotions).
-- Search: Runs KMP matching in real time and highlights results.
 - Visualizer: Dedicated panel showing live SVG diagrams of all four structures.
 
 ---
